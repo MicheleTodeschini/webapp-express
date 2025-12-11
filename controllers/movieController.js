@@ -1,8 +1,6 @@
-<<<<<<< HEAD
-const connection = require('../../database/connection')
-=======
+
 const connection = require('../database/connection')
->>>>>>> origin/main
+
 
 const index = (req, res) => {
     const sql = 'SELECT * FROM movies'
