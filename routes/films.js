@@ -14,4 +14,10 @@ router.get('/', movieController.index)
 //SHOW
 router.get('/:id', movieController.show)
 
+// STORE POST /API/FILM
+const multer = require('multer')
+const upload = multer({ dest: 'uploads/' })
+
+router.post('/',)
+
 module.exports = router

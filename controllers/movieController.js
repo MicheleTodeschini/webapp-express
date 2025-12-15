@@ -28,7 +28,19 @@ const show = (req, res) => {
 }
 
 
+const store = (req, res) => {
+    console.log(req.file);
+    console.log(req.body);
+    const { title, plot } = req.body
+    console.log(title, plot);
+
+
+    res.send(ok)
+}
+
+
 module.exports = {
     index,
-    show
+    show,
+    store
 }
