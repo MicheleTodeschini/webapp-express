@@ -5,6 +5,7 @@ const PORT = 3000
 const moviesRouter = require('./routes/films')
 const connection = require('./database/connection')
 
+
 app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
 
@@ -12,6 +13,7 @@ app.listen(PORT, () => {
 
 //REGISTER THE BOFY PARSER
 app.use(express.json())
+app.use(express.urlencoded({ extended: true }))
 
 //ADD STATIC ASSETS
 app.use(express.static('public'))

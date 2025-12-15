@@ -29,13 +29,12 @@ const show = (req, res) => {
 
 
 const store = (req, res) => {
-    console.log(req.file);
     console.log(req.body);
+    console.log(req.file);
     const { title, plot } = req.body
-    console.log(title, plot);
 
+    res.json({ title, plot })
 
-    res.send(ok)
 }
 
 

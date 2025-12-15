@@ -18,6 +18,6 @@ router.get('/:id', movieController.show)
 const multer = require('multer')
 const upload = multer({ dest: 'uploads/' })
 
-router.post('/',)
+router.post('/', upload.single('image'), movieController.store)
 
 module.exports = router
